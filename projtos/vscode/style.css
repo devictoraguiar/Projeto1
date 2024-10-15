@@ -4,23 +4,26 @@
     box-sizing: border-box;
 
 }
-:root{
-    --text-color: white;
-    --bg-url: url(bg-desktop.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.507);
-    --surface-color: rgba(128, 128, 128, 0.247);
-    --surface-color-hover:rgba(2, 41, 48, 0.08);
-    --highlight-color:rgba(0, 0, 0, 0.459);
-    --switch-bg-url: url(moon_stars.svg)
+
+:root {
+    /* Variáveis de cor e imagem para facilitar a troca de tema */
+    --text-color: white; /* Cor do texto */
+    --bg-url: url(bg-desktop.jpg); /* Imagem de fundo padrão */
+    --stroke-color: rgba(201, 117, 117, 0.507); /* Cor de borda com opacidade */
+    --surface-color: rgba(128, 128, 128, 0.247); /* Cor de fundo de elementos */
+    --surface-color-hover: rgba(250, 163, 228, 0.08); /* Cor de fundo ao passar o mouse */
+    --highlight-color: rgba(210, 96, 255, 0.493); /* Cor de destaque para ícones e links */
+    --switch-bg-url: url(moon_stars.svg); /* Ícone do modo noturno */
 }
-.light{
+.light {
+    /* Variáveis para o tema claro */
     --text-color: black;
-    --bg-url: url(bg-desktop-light.jpg);
+    --bg-url: url(bg-desktop-light.jpg); /* Imagem de fundo para o modo claro */
     --stroke-color: rgba(255, 255, 255, 0.522);
-    --surface-color:rgba(178, 181, 181, 0.657);
-    --surface-color-hover:rgba(244, 244, 249, 0.399);
-    --highlight-color:rgba(233, 240, 245, 0.564);
-    --switch-bg-url: url(sun.svg)
+    --surface-color: rgba(243, 169, 203, 0.657);
+    --surface-color-hover: rgba(244, 244, 249, 0.399);
+    --highlight-color: rgba(243, 20, 143, 0.226);
+    --switch-bg-url: url(sun.svg); /* Ícone do modo claro */
 }
 
 body{
@@ -37,7 +40,8 @@ body * {
     
 }
 #conteiner {
-    width: 720px;
+    width:100%;
+    max-width: 580px;
   margin: 56px auto;
   padding: 0 24px
 }
